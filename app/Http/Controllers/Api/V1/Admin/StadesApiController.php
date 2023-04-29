@@ -7,7 +7,7 @@ use App\Http\Requests\StoreStadeRequest;
 use App\Http\Requests\UpdateStadeRequest;
 use App\Http\Resources\Admin\StadeResource;
 use App\Models\Stade;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 

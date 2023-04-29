@@ -8,7 +8,7 @@ use App\Http\Requests\StoreJoueurRequest;
 use App\Http\Requests\UpdateJoueurRequest;
 use App\Models\Equipe;
 use App\Models\Joueur;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 

@@ -8,7 +8,7 @@ use App\Http\Requests\StoreEquipeRequest;
 use App\Http\Requests\UpdateEquipeRequest;
 use App\Http\Resources\Admin\EquipeResource;
 use App\Models\Equipe;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 

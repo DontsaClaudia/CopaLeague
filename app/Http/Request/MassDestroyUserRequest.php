@@ -2,16 +2,16 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Matchs;
+use App\Models\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Symfony\Component\HttpFoundation\Response;
 
-class MassDestroyMatchRequest extends FormRequest
+class MassDestroyUserRequest extends FormRequest
 {
     public function authorize()
     {
-        abort_if(Gate::denies('match_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('user_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return true;
     }
@@ -20,7 +20,7 @@ class MassDestroyMatchRequest extends FormRequest
     {
         return [
             'ids'   => 'required|array',
-            'ids.*' => 'exists:matches,id',
+            'ids.*' => 'exists:users,id',
         ];
     }
 }

@@ -10,7 +10,7 @@ class AddRelationshipFieldsToStadesTable extends Migration
     {
         Schema::table('stades', function (Blueprint $table) {
             $table->unsignedBigInteger('match_1_id')->nullable();
-            $table->foreign('match_1_id', 'match_1_fk_8396538')->references('id')->on('matches');
+            $table->foreign('match_1_id', 'match_1_fk_8396538')->references('id')->on('matchs');
         });
     }
 

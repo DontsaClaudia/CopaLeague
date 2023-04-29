@@ -12,6 +12,7 @@ class CreateEquipesTable extends Migration
             $table->bigIncrements('id');
             $table->string('nom');
             $table->string('nom_coach');
+            $table->string('photo');
             $table->timestamps();
             $table->softDeletes();
         });

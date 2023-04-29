@@ -29,7 +29,7 @@ class MatchsController extends Controller
 
 
 
-        return view('admin.matches.index', compact('matches'));
+        return view('admin.matchs.index', compact('matchs'));
     }
     function create()
     {
@@ -44,7 +44,7 @@ class MatchsController extends Controller
 
 
 
-        return view('admin.matches.create', compact('equipe_1s', 'equipe_2s'));
+        return view('admin.matchs.create', compact('equipe_1s', 'equipe_2s'));
     }
     function store(StoreMatchRequest $request)
     {
@@ -55,7 +55,7 @@ class MatchsController extends Controller
         $match = Matchs::create($request->all());
 
 
-        return redirect()->route('admin.matches.index');
+        return redirect()->route('admin.matchs.index');
     }
     function edit(Matchs $match)
     {
@@ -71,7 +71,7 @@ class MatchsController extends Controller
 
         $match->load('equipe_1', 'equipe_2');
 
-        return view('admin.matches.edit', compact('equipe_1s', 'equipe_2s', 'match'));
+        return view('admin.matchs.edit', compact('equipe_1s', 'equipe_2s', 'match'));
     }
     function update(UpdateMatchRequest $request, Matchs $match)
     {
@@ -82,7 +82,7 @@ class MatchsController extends Controller
         $match->update($request->all());
 
 
-        return redirect()->route('admin.matches.index');
+        return redirect()->route('admin.matchs.index');
     }
     function show(Matchs $match)
     {
@@ -93,7 +93,7 @@ class MatchsController extends Controller
 
         $match->load('equipe_1', 'equipe_2');
 
-        return view('admin.matches.show', compact('match'));
+        return view('admin.matchs.show', compact('match'));
     }
     function destroy(Matchs $match)
     {

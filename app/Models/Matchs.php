@@ -12,7 +12,7 @@ class Matchs extends Model  {
 
 use SoftDeletes, HasFactory;
 
-public $table = 'matches';
+public $table = 'matchs';
 
 protected $dates = [
 'date_de_matchs',
@@ -22,7 +22,7 @@ protected $dates = [
 ];
 
     protected $fillable = [
-'equipe_1_id',
+    'equipe_1_id',
     'equipe_2_id',
     'resultat_1',
     'resultat_2',

@@ -20,7 +20,7 @@ class MassDestroyMatchRequest extends FormRequest
     {
         return [
             'ids'   => 'required|array',
-            'ids.*' => 'exists:matches,id',
+            'ids.*' => 'exists:matchs,id',
         ];
     }
 }

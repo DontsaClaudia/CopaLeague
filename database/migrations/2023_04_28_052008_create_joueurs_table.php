@@ -15,6 +15,9 @@ class CreateJoueursTable extends Migration
             $table->integer('age');
             $table->integer('dossard');
             $table->string('poste');
+            $table->string('email');
+            $table->string('password');
+            $table->string('photo');
             $table->timestamps();
             $table->softDeletes();
         });

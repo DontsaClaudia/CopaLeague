@@ -26,13 +26,13 @@
                             {{ trans('cruds.stade.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.stade.fields.match_1') }}
-                        </th>
-                        <th>
                             {{ trans('cruds.stade.fields.nom') }}
                         </th>
                         <th>
                             {{ trans('cruds.stade.fields.lieu') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.stade.fields.photo') }}
                         </th>
                         <th>
                             &nbsp;
@@ -49,13 +49,17 @@
                                 {{ $stade->id ?? '' }}
                             </td>
                             <td>
-                                {{ $stade->match_1->date_de_matchs ?? '' }}
-                            </td>
-                            <td>
                                 {{ $stade->nom ?? '' }}
                             </td>
                             <td>
                                 {{ $stade->lieu ?? '' }}
+                            </td>
+                            <td>
+                                @if($stade->photo)
+                                    <a href="{{ $stade->photo->getUrl() }}" target="_blank" style="display: inline-block">
+                                        <img src="{{ $stade->photo->getUrl('thumb') }}">
+                                    </a>
+                                @endif
                             </td>
                             <td>
                                 @can('stade_show')
@@ -136,7 +140,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-
+  
 })
 
 </script>

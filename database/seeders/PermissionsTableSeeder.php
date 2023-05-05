@@ -156,6 +156,26 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 37,
+                'title' => 'tournoi_create',
+            ],
+            [
+                'id'    => 38,
+                'title' => 'tournoi_edit',
+            ],
+            [
+                'id'    => 39,
+                'title' => 'tournoi_show',
+            ],
+            [
+                'id'    => 40,
+                'title' => 'tournoi_delete',
+            ],
+            [
+                'id'    => 41,
+                'title' => 'tournoi_access',
+            ],
+            [
+                'id'    => 42,
                 'title' => 'profile_password_edit',
             ],
         ];

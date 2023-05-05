@@ -8,9 +8,9 @@ use App\Http\Requests\MassDestroyEquipeRequest;
 use App\Http\Requests\StoreEquipeRequest;
 use App\Http\Requests\UpdateEquipeRequest;
 use App\Models\Equipe;
-use Illuminate\Support\Facades\Gate;
+use Gate;
 use Illuminate\Http\Request;
-use Spatie\MediaLibrary\MediaCollections\Media;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\Response;
 
 class EquipesController extends Controller

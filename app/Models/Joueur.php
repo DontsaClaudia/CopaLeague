@@ -29,8 +29,6 @@ class Joueur extends Model
         'dossard',
         'poste',
         'email',
-        'password',
-        'photo',
         'created_at',
         'updated_at',
         'deleted_at',

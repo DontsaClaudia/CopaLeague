@@ -8,9 +8,13 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Joueurs
     Route::apiResource('joueurs', 'JoueursApiController');
 
-    // Matchs
-    Route::apiResource('matchs', 'MatchsApiController');
-
     // Stades
+    Route::post('stades/media', 'StadesApiController@storeMedia')->name('stades.storeMedia');
     Route::apiResource('stades', 'StadesApiController');
+
+    // Tournois
+    Route::apiResource('tournois', 'TournoisApiController');
+
+    // Matchs
+    Route::apiResource('matches', 'MatchsApiController');
 });

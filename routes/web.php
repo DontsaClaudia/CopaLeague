@@ -35,13 +35,19 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::delete('joueurs/destroy', 'JoueursController@massDestroy')->name('joueurs.massDestroy');
     Route::resource('joueurs', 'JoueursController');
 
-    // Matchs
-    Route::delete('matchs/destroy', 'MatchsController@massDestroy')->name('matchs.massDestroy');
-    Route::resource('matchs', 'MatchsController');
-
     // Stades
     Route::delete('stades/destroy', 'StadesController@massDestroy')->name('stades.massDestroy');
+    Route::post('stades/media', 'StadesController@storeMedia')->name('stades.storeMedia');
+    Route::post('stades/ckmedia', 'StadesController@storeCKEditorImages')->name('stades.storeCKEditorImages');
     Route::resource('stades', 'StadesController');
+
+    // Tournois
+    Route::delete('tournois/destroy', 'TournoisController@massDestroy')->name('tournois.massDestroy');
+    Route::resource('tournois', 'TournoisController');
+
+    // Matchs
+    Route::delete('matches/destroy', 'MatchsController@massDestroy')->name('matches.massDestroy');
+    Route::resource('matches', 'MatchsController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password

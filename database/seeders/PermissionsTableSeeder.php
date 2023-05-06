@@ -116,46 +116,66 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 27,
-                'title' => 'match_create',
-            ],
-            [
-                'id'    => 28,
-                'title' => 'match_edit',
-            ],
-            [
-                'id'    => 29,
-                'title' => 'match_show',
-            ],
-            [
-                'id'    => 30,
-                'title' => 'match_delete',
-            ],
-            [
-                'id'    => 31,
-                'title' => 'match_access',
-            ],
-            [
-                'id'    => 32,
                 'title' => 'stade_create',
             ],
             [
-                'id'    => 33,
+                'id'    => 28,
                 'title' => 'stade_edit',
             ],
             [
-                'id'    => 34,
+                'id'    => 29,
                 'title' => 'stade_show',
             ],
             [
-                'id'    => 35,
+                'id'    => 30,
                 'title' => 'stade_delete',
             ],
             [
-                'id'    => 36,
+                'id'    => 31,
                 'title' => 'stade_access',
             ],
             [
+                'id'    => 32,
+                'title' => 'tournoi_create',
+            ],
+            [
+                'id'    => 33,
+                'title' => 'tournoi_edit',
+            ],
+            [
+                'id'    => 34,
+                'title' => 'tournoi_show',
+            ],
+            [
+                'id'    => 35,
+                'title' => 'tournoi_delete',
+            ],
+            [
+                'id'    => 36,
+                'title' => 'tournoi_access',
+            ],
+            [
                 'id'    => 37,
+                'title' => 'match_create',
+            ],
+            [
+                'id'    => 38,
+                'title' => 'match_edit',
+            ],
+            [
+                'id'    => 39,
+                'title' => 'match_show',
+            ],
+            [
+                'id'    => 40,
+                'title' => 'match_delete',
+            ],
+            [
+                'id'    => 41,
+                'title' => 'match_access',
+            ],
+            [
+                'id'    => 42,
                 'title' => 'profile_password_edit',
             ],
         ];
